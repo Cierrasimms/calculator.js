@@ -11,6 +11,8 @@ var App = {
       answer: 0,
       random: 0,
       showInfo: true,
+      fruits: ["apple", "pear", "banana"],
+      newFruit: "",
     };
   },
   methods: {
@@ -31,6 +33,10 @@ var App = {
         parseInt(this.number1) * parseInt(this.number2) -
         parseInt(this.number3) +
         parseInt(this.number2) / parseInt(this.number3);
+    },
+    addNewFruit: function () {
+      this.fruits.push(this.newFruit);
+      this.newFruit = "";
     },
   },
 };

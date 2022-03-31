@@ -30,7 +30,14 @@
       <p v-if="showInfo"> Pewpewpewpew</p>
       <p v-else> Powpowpow</p>
     </div>
-  
+    <div>
+      <h3>Fruits (count: {{ fruits.length }})</h3>
+      <ol>
+        <li v-for="fruit in fruits">{{ fruit }}</li>
+      </ol>
+      <input type="text" v-model="newFruit">
+      <button v-on:click="addNewFruit()">Add new fruit</button>
+    </div>
   </div>
 </body>
 </html>
