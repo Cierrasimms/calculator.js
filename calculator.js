@@ -10,6 +10,7 @@ var App = {
       product: 0,
       answer: 0,
       random: 0,
+      showInfo: true,
     };
   },
   methods: {

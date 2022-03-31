@@ -24,6 +24,12 @@
     <div><button @click = "weirdnumber()" >Random Calculation</button></div>
     <p>The random caluclation is: {{random}} </p>
   
+    <div>
+      <button @click = "showInfo = !showInfo" >Toggle</button>
+      <h2>More Info</h2>
+      <p v-if="showInfo"> Pewpewpewpew</p>
+      <p v-else> Powpowpow</p>
+    </div>
   
   </div>
 </body>
